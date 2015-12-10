@@ -1,0 +1,9 @@
+anybox.recipe.odoo/
+bin/
+community-addons/
+develop-eggs/
+etc/
+parts/
+upgrade.log*
+
+.installed.cfg
