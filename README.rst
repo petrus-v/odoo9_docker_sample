@@ -2,18 +2,19 @@
 Odoo 9 Buildout config using anybox.recipe.odoo and Docker
 ==========================================================
 
-This is an example using Odoo 9 and `anybox.recipe.odoo <
-http://docs.anybox.fr/anybox.recipe.odoo/current/>`_ to run unitest with
-`nose <https://nose.readthedocs.org/en/latest/>`_.
+This is an example to run odoo9 module unit-test using `anybox.recipe.odoo
+<http://docs.anybox.fr/anybox.recipe.odoo/current/>`_ (a `buildout 
+<http://www.buildout.org/en/latest/>`_ recipe),
+`nose <https://nose.readthedocs.org/en/latest/>`_ and `docker <https://www.docker.com/>`_.
 
 warning::
 
     This should not be use in production.
 
 
-Here 2 independent quickstart to launch your unit tests:
-    - using anybox.recipe.odoo
-    - running it within a docker container
+Here 2 independent HowTo to launch your unit tests:
+    - the first purpose it to use it without docker
+    - then running it within a docker container
 
 
 Quick start using buildout on debian laptop assuming you already get
@@ -55,3 +56,8 @@ Also available a using a quick and dirty Dockerfile::
     To configure DATABASE access edit ``buildout.docker.cfg`` file before
     building the image!!! or mount the ``etc/`` directory with the odoo.cfg
     file
+
+
+If you want to go in deep using docker and anybox.recipe.odoo you should take in consideration
+`voodoo <https://github.com/akretion/voodoo>`_ project, it's a tool from akretion which combine
+docker compose and buildout (which I've personally never used!)
