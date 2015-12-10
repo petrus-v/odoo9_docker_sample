@@ -7,7 +7,7 @@ This is an example to run odoo9 module unit-test using `anybox.recipe.odoo
 <http://www.buildout.org/en/latest/>`_ recipe),
 `nose <https://nose.readthedocs.org/en/latest/>`_ and `docker <https://www.docker.com/>`_.
 
-warning::
+.. warning::
 
     This should not be use in production.
 
@@ -36,7 +36,7 @@ first_steps.html#installing-build-dependencies>`_::
     bin/nosetests -d mydbtest -- -s -v personal-addons/sample/
 
 
-Also available a using a quick and dirty Dockerfile::
+Also available using a quick and dirty Dockerfile::
 
     # Cloning this repo
     git clone git@github.com:petrus-v/odoo9_docker_sample.git
